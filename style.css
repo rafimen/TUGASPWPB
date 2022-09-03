@@ -6,6 +6,7 @@
 .navigasi{
     position: fixed;
     width: 100%;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .atas{
@@ -15,10 +16,13 @@ background-color:rgb(255,94,0) ;
 
 .atas a{
     color: white;
+
     text-decoration: none;
     margin: 15px;
     padding-top: 5px;
     font-family: sans-serif;
+
+    
     font-size: 13px;
 }
 
@@ -115,3 +119,24 @@ background-color:rgb(255,94,0) ;
     display: flex ;
 }
 
+@media(max-width:1100px){
+    .atas{
+        display: none;
+    }
+
+    .barang{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .gambarProduk{
+        width: 100px;
+        height: 100px;
+    }
+
+    .kotak{
+        border: 1px solid red;
+        margin-bottom:20px;
+    }
+}
